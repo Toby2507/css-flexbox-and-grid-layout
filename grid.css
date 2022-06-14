@@ -1,0 +1,41 @@
+body {
+    background-color: #000;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px;
+    grid-template-areas: 
+    "orange orange orange orange yellow yellow"
+    "orange orange orange orange yellow yellow"
+    "green green green blue1 blue1 blue1"
+    "green green green blue2 blue2 blue2"
+    ;
+    gap: 1rem;
+    background-color: #000;
+    width: min(80vw, 768px);
+}
+.orange {
+    grid-area: orange;
+    background-color: orange;
+}
+.yellow {
+    grid-area: yellow;
+    background-color: yellow;
+}
+.green {
+    grid-area: green;
+    background-color: green;
+}
+.blue1 {
+    grid-area: blue1;
+    background-color: blue;
+}
+.blue2 {
+    grid-area: blue2;
+    background-color: blue;
+}

@@ -1,0 +1,120 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/*
+============================================
+RESET
+============================================
+*/
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    display: grid;
+    place-items: center;
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    font: 400 15px/1.5 "Lexend Deca", sans-serif;
+    letter-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.container {
+    display: flex;
+    width: min(80vw, 768px);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    gap: 1rem;
+}
+.card h1 {
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+.card p {
+    flex: 1;
+}
+.btn {
+    padding: .5rem 2rem;
+    margin-top: 2rem;
+    border-radius: 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: hsl(0, 0%, 95%);
+    text-transform: capitalize;
+    width: max-content;
+    cursor: pointer;
+    border: 3px solid hsl(0, 0%, 95%);
+}
+.card3 .btn {
+    color: hsl(179, 100%, 13%);
+}
+.card2 .btn {
+    color: hsl(184, 100%, 22%);
+}
+.card1 .btn {
+    color: hsl(31, 77%, 52%);
+}
+.btn:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 3px solid hsl(0, 0%, 95%);
+}
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+}
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
